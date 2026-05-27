@@ -1,55 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amazon Frontend Clone</title>
 
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/products.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<header class="navbar">
 
-<div class="navbar__logo">
-Amazon Clone
+<!-- NAVBAR -->
+ <!-- AMAZON STYLE HEADER -->
+
+<header class="header">
+
+
+    <!-- TOP HEADER -->
+
+    <div class="header-top">
+
+
+        <!-- LOGO -->
+
+        <div class="header-logo">
+
+            <a href="index.html">
+
+                amazon<span>.in</span>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- LOCATION -->
+
+        <div class="header-location">
+
+            <p>Delivering to Mohali 160055</p>
+
+            <h4>📍 Update location</h4>
+
+        </div>
+
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="header-search">
+
+            <select>
+
+                <option>All</option>
+
+                <option>Electronics</option>
+
+                <option>Fashion</option>
+
+                <option>Mobiles</option>
+
+            </select>
+
+            <input type="text"
+                   placeholder="Search Amazon.in">
+
+            <button>
+
+                🔍
+
+            </button>
+
+        </div>
+
+
+
+        <!-- LANGUAGE -->
+
+       <!-- LANGUAGE DROPDOWN -->
+
+<div class="language-dropdown">
+
+
+    <!-- CURRENT LANGUAGE -->
+
+    <div class="language-btn">
+
+        🇮🇳 EN ▼
+
+    </div>
+
+
+
+    <!-- DROPDOWN MENU -->
+
+    <div class="language-menu">
+
+        <h4>Change Language</h4>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang"
+                   checked>
+
+            English - EN
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            हिन्दी - HI
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            தமிழ் - TA
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            తెలుగు - TE
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            ಕನ್ನಡ - KN
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            മലയാളം - ML
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            বাংলা - BN
+
+        </label>
+
+
+        <label>
+
+            <input type="radio"
+                   name="lang">
+
+            मराठी - MR
+
+        </label>
+
+
+
+        <!-- COUNTRY -->
+
+        <div class="country-info">
+
+            🇮🇳 You are shopping on Amazon.in
+
+        </div>
+
+
+
+        <!-- CHANGE REGION -->
+
+        <a href="#"
+           class="change-region">
+
+            Change country/region
+
+        </a>
+
+    </div>
+
 </div>
 
-<div class="navbar__search">
-<input type="text" placeholder="Search products">
-<button>Search</button>
-</div>
 
-<div class="navbar__links">
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="cart.html" class="navbar__cart">
-Cart
-<span class="cart-badge">0</span>
-</a>
-</div>
+
+        <!-- ACCOUNT -->
+
+        <div class="header-account">
+
+            <p>Hello, sign in</p>
+
+            <h4>Account & Lists ▼</h4>
+
+        </div>
+
+
+
+        <!-- RETURNS -->
+
+        <div class="header-returns">
+
+            <p>Returns</p>
+
+            <h4>& Orders</h4>
+
+        </div>
+
+
+
+        <!-- CART -->
+
+        <div class="header-cart">
+
+            🛒
+
+            <span>0</span>
+
+            Cart
+
+        </div>
+
+    </div>
+
+
+
+    <!-- BOTTOM NAVBAR -->
+
+    <nav class="header-bottom">
+
+        <a href="#">☰ All</a>
+
+        <a href="#">Fresh</a>
+
+        <a href="#">MX Player</a>
+
+        <a href="#">Sell</a>
+
+        <a href="#">Bestsellers</a>
+
+        <a href="#">Mobiles</a>
+
+        <a href="#">Today's Deals</a>
+
+        <a href="#">New Releases</a>
+
+        <a href="#">Customer Service</a>
+
+        <a href="#">Prime ▼</a>
+
+        <a href="#">Amazon Pay</a>
+
+        <a href="#">Electronics</a>
+
+        <a href="#">Fashion</a>
+
+        <a href="#">Home & Kitchen</a>
+
+    </nav>
 
 </header>
 
+
+
+
+
+<!-- HERO SECTION -->
+
 <section class="hero">
-<h1><center>Welcome to Amazon Frontend Clone</center></h1>
-<br>
-<h3><p><b>Best products at best prices</b></p></h3>
+
+    <div class="hero-content">
+
+        <h1>
+            Welcome to Amazon Clone
+        </h1>
+
+        <p>
+            Shop Electronics, Fashion & More
+        </p>
+
+        <button class="hero-btn">
+
+            Shop Now
+
+        </button>
+
+    </div>
+
 </section>
 
-<section class="featured-products container">
 
-<h2>Featured Products</h2>
 
-<div class="product-grid"></div>
+<!-- CATEGORY BOXES -->
+
+<section class="categories container">
+
+    <div class="category-card">
+
+        <img src="image/dell1.jfif">
+
+        <h3>Electronics</h3>
+
+    </div>
+
+    <div class="category-card">
+
+        <img src="image/tshirt.jpg">
+
+        <h3>Fashion</h3>
+
+    </div>
+
+    <div class="category-card">
+
+        <img src="image/lamp.jpg">
+
+        <h3>Home Decor</h3>
+
+    </div>
+
+    <div class="category-card">
+
+        <img src="image/phone.jpg">
+
+        <h3>Mobiles</h3>
+
+    </div>
 
 </section>
 
-<script src="js/data.js"></script>
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
+
+
+<!-- PRODUCT SECTION -->
+
+<section class="products-section container">
+
+    <h2>
+        Best Sellers
+    </h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <img src="image/dell.jfif">
+
+            <h3>Dell Laptop</h3>
+
+            <p class="price">
+                ₹34,990
+            </p>
+
+            <button>
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="image/headphone.jpg">
+
+            <h3>Bluetooth Headphones</h3>
+
+            <p class="price">
+                ₹1,299
+            </p>
+
+            <button>
+                Add to Cart
+            </button>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img src="image/watch.jpg">
+
+            <h3>Smart Watch</h3>
+
+            <p class="price">
+                ₹2,999
+            </p>
+
+            <button>
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOME & KITCHEN SECTION -->
+
+<section class="women-owned-section">
+
+    <!-- HEADER -->
+
+    <div class="section-header">
+
+        <h2>
+
+            Up to 60% off | Home & kitchen essentials from women owned brands
+
+        </h2>
+
+        <a href="#">
+
+            See all offers
+
+        </a>
+
+    </div>
+
+
+
+    <!-- PRODUCTS -->
+
+    <div class="women-products">
+
+
+        <!-- ITEM 1 -->
+
+        <div class="women-product-card">
+
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c"
+                 alt="Storage Box">
+
+        </div>
+
+
+
+        <!-- ITEM 2 -->
+
+        <div class="women-product-card">
+
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+                 alt="Kitchen Containers">
+
+        </div>
+
+
+
+        <!-- ITEM 3 -->
+
+        <div class="women-product-card">
+
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+                 alt="Bathroom Shelf">
+
+        </div>
+
+
+
+        <!-- ITEM 4 -->
+
+        <div class="women-product-card">
+
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858"
+                 alt="Wall Holder">
+
+        </div>
+
+
+
+        <!-- ITEM 5 -->
+
+        <div class="women-product-card">
+
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156"
+                 alt="Bathroom Organizer">
+
+        </div>
+
+
+
+        <!-- ITEM 6 -->
+
+        <div class="women-product-card">
+
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+                 alt="Hook Holder">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<!-- AMAZON STYLE FOOTER -->
+
+<footer class="footer">
+
+
+    <!-- BACK TO TOP -->
+
+    <div class="footer-top">
+
+        <a href="#">
+            Back to top
+        </a>
+
+    </div>
+
+
+
+    <!-- FOOTER MAIN -->
+
+    <div class="footer-main">
+
+
+        <!-- COLUMN 1 -->
+
+        <div class="footer-column">
+
+            <h3>Get to Know Us</h3>
+
+            <a href="#">About Amazon</a>
+
+            <a href="#">Careers</a>
+
+            <a href="#">Press Releases</a>
+
+            <a href="#">Amazon Science</a>
+
+        </div>
+
+
+
+        <!-- COLUMN 2 -->
+
+        <div class="footer-column">
+
+            <h3>Connect with Us</h3>
+
+            <a href="#">Facebook</a>
+
+            <a href="#">Twitter</a>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">YouTube</a>
+
+        </div>
+
+
+
+        <!-- COLUMN 3 -->
+
+        <div class="footer-column">
+
+            <h3>Make Money with Us</h3>
+
+            <a href="#">Sell on Amazon</a>
+
+            <a href="#">Sell under Amazon Accelerator</a>
+
+            <a href="#">Protect and Build Your Brand</a>
+
+            <a href="#">Amazon Global Selling</a>
+
+            <a href="#">Supply to Amazon</a>
+
+            <a href="#">Become an Affiliate</a>
+
+            <a href="#">Fulfilment by Amazon</a>
+
+            <a href="#">Advertise Your Products</a>
+
+            <a href="#">Amazon Pay on Merchants</a>
+
+        </div>
+
+
+
+        <!-- COLUMN 4 -->
+
+        <div class="footer-column">
+
+            <h3>Let Us Help You</h3>
+
+            <a href="#">Your Account</a>
+
+            <a href="#">Returns Centre</a>
+
+            <a href="#">Recalls and Product Safety Alerts</a>
+
+            <a href="#">100% Purchase Protection</a>
+
+            <a href="#">Amazon App Download</a>
+
+            <a href="#">Help</a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+
+        <!-- LOGO -->
+
+        <div class="footer-logo">
+
+            amazon
+
+        </div>
+
+
+
+        <!-- OPTIONS -->
+
+        <div class="footer-options">
+
+            <button class="footer-btn">
+
+                🌐 English
+
+            </button>
+
+            <button class="footer-btn">
+
+                🇮🇳 India
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-copy">
+
+        © 2024 Amazon Clone. All rights reserved.
+
+    </div>
+
+</footer>
 
 </body>
+
 </html>
